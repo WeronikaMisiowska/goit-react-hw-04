@@ -1,0 +1,31 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.closeButton {
+    color: white;
+    background: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modalContent {
+    width: 500px;
+    height: 400px;
+}
+
+.modalContentImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.modalImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

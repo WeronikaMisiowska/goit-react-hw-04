@@ -1,0 +1,32 @@
+.imageGallery {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageItem {
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imageItem:hover {
+    transform: scale(1.05);
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
