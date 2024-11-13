@@ -16,7 +16,7 @@ const App = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [page, setPage] = useState(1);
 
-  // Ref do kontenera, w którym znajduje się galeria zdjęć (ImageGallery)
+
   const galleryRef = useRef(null);
 
   const UNSPLASH_API_KEY = 'OsORAcy42rHPijqVIrToN6YT6oVebzT7aTZFZmgDhLU';
@@ -60,7 +60,7 @@ const App = () => {
     setPage(nextPage);
     fetchImages(query, nextPage);
 
-    // Zastosowanie scrollowania do kontenera galerii, nie całej strony
+ 
     if (galleryRef.current) {
       galleryRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
@@ -82,7 +82,7 @@ const App = () => {
       {error && <ErrorMessage message={error} />}
       {isLoading && <Loader />}
       
-      {/* Używamy galleryRef dla kontenera galerii */}
+      
       <div ref={galleryRef}>
         {!isLoading && images.length > 0 && <ImageGallery images={images} openModal={openModal} />}
       </div>
